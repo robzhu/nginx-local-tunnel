@@ -80,4 +80,4 @@ ssh -R :4000:localhost:3000 -p 2222 admin@YOURDOMAIN.tld
 # run something on localhost:3000
 ```
 
-Now you should be able to access your app from either http://localhost:3000 or https://dev.YOURDOMAIN.tld. Keep the SSH channel window open until you're done testing. For additional security, you'll want to limit access to only a select set of IP addresses and origins (varies depending on which VPS provider you use).
+As long as you keep this SSH connection open, you'll able to access your app from either http://localhost:3000 or https://dev.YOURDOMAIN.tld. For additional security, you'll want to limit access to only a select set of IP addresses and origins.
