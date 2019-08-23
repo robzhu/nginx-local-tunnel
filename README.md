@@ -29,7 +29,7 @@ docker run -d -P 80:80 -p 2222:22 {DOCKERUSER}/dev-proxy
 # 3000 refers to the port that your app is running on localhost.
 # 2222 is the forwarded port on the host that we use to directly SSH into the container.
 # 80 is the default HTTP port, forwarded from the host
-ssh -R :80:localhost:3000 -p 2222 admin@HOSTIP
+ssh -R :80:localhost:3000 -p 2222 root@YOURDOMAIN.tld
 ```
 
 ## 3. Start the sample app on localhost
